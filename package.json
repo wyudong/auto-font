@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "SERVER_SEL=2 node main.js && SERVER_SEL=3 node main.js && SERVER_SEL=4 node main.js && SERVER_SEL=5 node main.js && SERVER_SEL=6 node main.js",
+    "start": "set SERVER_SEL=2 && node main.js && set SERVER_SEL=3 && node main.js && set SERVER_SEL=4 && node main.js && set SERVER_SEL=5 && node main.js && set SERVER_SEL=6 && node main.js",
     "server1": "set SERVER_SEL=1 && node main.js",
     "server2": "set SERVER_SEL=2 && node main.js",
     "server3": "set SERVER_SEL=3 && node main.js",
