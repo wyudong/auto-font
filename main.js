@@ -21,7 +21,9 @@ const main = async () => {
   console.log('activate maplestory window')
   await sleep(5000);
   robot.keyTap('left', 'command');
-  await sleep(3000);
+  await sleep(2000);
+  robot.keyTap('escape');
+  await sleep(2000);
   console.log(`server ${sel} start`);
   robot.moveMouse(Servers[sel - 1].x, Servers[sel - 1].y);
   robot.mouseClick('left', SingleClick);
