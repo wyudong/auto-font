@@ -14,12 +14,11 @@ const {
 } = pos;
 const sel = process.env.SERVER_SEL;
 
-console.log(sel);
-
 robot.setMouseDelay(100);
 robot.setKeyboardDelay(100);
 
 const main = async () => {
+  console.log('activate maplestory window')
   await sleep(5000);
   robot.keyTap('left', 'command');
   console.log(`server ${sel} start`);
@@ -28,12 +27,12 @@ const main = async () => {
   await sleep(3000);
   robot.moveMouse(Channel.x, Channel.y);
   robot.mouseClick('left', DoubleClick);
-  await sleep(5000);
+  await sleep(3000);
   robot.moveMouse(Character.x, Character.y);
   robot.mouseClick('left', DoubleClick);
-  await sleep(10000);
+  await sleep(8000);
   robot.keyTap('escape');
-  await sleep(3000);
+  await sleep(1000);
   robot.moveMouse(MenuOpen.x, MenuOpen.y);
   robot.mouseClick('left', SingleClick);
   await sleep(3000);
@@ -68,11 +67,11 @@ const main = async () => {
   }
 
   robot.keyTap('escape');
-  await sleep(3000);
+  await sleep(2000);
   robot.keyTap('up');
-  await sleep(3000);
+  await sleep(2000);
   robot.keyTap('enter');
-  await sleep(3000);
+  await sleep(2000);
   robot.keyTap('enter');
   await sleep(5000);
   robot.keyTap('escape');
