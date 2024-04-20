@@ -1,0 +1,17 @@
+{
+  "name": "auto-font",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "SERVER_SEL=2 node main.js && SERVER_SEL=3 node main.js && SERVER_SEL=4 node main.js && SERVER_SEL=5 node main.js && SERVER_SEL=6 node main.js",
+    "server1": "SERVER_SEL=1 node main.js",
+    "server2": "SERVER_SEL=2 node main.js",
+    "server3": "SERVER_SEL=3 node main.js",
+    "server4": "SERVER_SEL=4 node main.js",
+    "server5": "SERVER_SEL=5 node main.js",
+    "server6": "SERVER_SEL=6 node main.js",
+  },
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
+}
