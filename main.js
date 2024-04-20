@@ -21,6 +21,7 @@ const main = async () => {
   console.log('activate maplestory window')
   await sleep(5000);
   robot.keyTap('left', 'command');
+  await sleep(3000);
   console.log(`server ${sel} start`);
   robot.moveMouse(Servers[sel - 1].x, Servers[sel - 1].y);
   robot.mouseClick('left', SingleClick);
@@ -32,7 +33,7 @@ const main = async () => {
   robot.mouseClick('left', DoubleClick);
   await sleep(8000);
   robot.keyTap('escape');
-  await sleep(1000);
+  await sleep(2000);
   robot.moveMouse(MenuOpen.x, MenuOpen.y);
   robot.mouseClick('left', SingleClick);
   await sleep(3000);
@@ -49,7 +50,7 @@ const main = async () => {
     robot.keyTap('space');
     await sleep(3000);
     robot.keyTap('space');
-    await sleep(930000);
+    await sleep(980000);
     robot.moveMouse(MenuTaskIcon.x, MenuTaskIcon.y);
     robot.mouseClick('left', SingleClick);
     await sleep(3000);
