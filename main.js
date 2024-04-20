@@ -7,6 +7,7 @@ const {
   Servers,
   Channel,
   Character,
+  Sunday,
   MenuOpen,
   MenuTaskIcon,
   MenuTaskAccept,
