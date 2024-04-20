@@ -34,6 +34,9 @@ const main = async () => {
   robot.moveMouse(Character.x, Character.y);
   robot.mouseClick('left', DoubleClick);
   await sleep(8000);
+  robot.moveMouse(Sunday.x, Sunday.y);
+  robot.mouseClick('left', SingleClick);
+  await sleep(2000);
   robot.keyTap('escape');
   await sleep(2000);
   robot.moveMouse(MenuOpen.x, MenuOpen.y);
