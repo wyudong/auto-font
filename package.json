@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "set SERVER_SEL=2 && node main.js && set SERVER_SEL=3 && node main.js && set SERVER_SEL=4 && node main.js && set SERVER_SEL=5 && node main.js && set SERVER_SEL=6 && node main.js",
-    "server1": "set SERVER_SEL=1 && node main.js",
-    "server2": "set SERVER_SEL=2 && node main.js",
-    "server3": "set SERVER_SEL=3 && node main.js",
-    "server4": "set SERVER_SEL=4 && node main.js",
-    "server5": "set SERVER_SEL=5 && node main.js",
-    "server6": "set SERVER_SEL=6 && node main.js"
+    "start": "npm run server1 && npm run server2 && npm run server3 && npm run server4 && npm run server5 && npm run server6",
+    "server1": "cross-env SERVER_SEL=1 node main.js",
+    "server2": "cross-env SERVER_SEL=2 node main.js",
+    "server3": "cross-env SERVER_SEL=3 node main.js",
+    "server4": "cross-env SERVER_SEL=4 node main.js",
+    "server5": "cross-env SERVER_SEL=5 node main.js",
+    "server6": "cross-env SERVER_SEL=6 node main.js"
   },
   "dependencies": {
     "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
