@@ -12,6 +12,7 @@
     "server6": "cross-env SERVER_SEL=6 node main.js"
   },
   "dependencies": {
+    "log-timestamp": "^0.3.0",
     "robotjs": "^0.6.0"
   },
   "devDependencies": {

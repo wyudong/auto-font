@@ -188,6 +188,18 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
+log-prefix@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/log-prefix/-/log-prefix-0.1.1.tgz#3ec492138c8044c9f9732298492dca87850cac90"
+  integrity sha512-aP1Lst8OCdZKATqzXDN0JBissNVZuiKLyo6hOXDBxaQ1jHDsaxh2J1i5Pp0zMy6ayTKDWfUlLMXyLaQe1PJ48g==
+
+log-timestamp@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/log-timestamp/-/log-timestamp-0.3.0.tgz#2e10f1f0db872674ef3ecf53d6a312840acae45f"
+  integrity sha512-luRz6soxijd1aJh0GkLXFjKABihxthvTfWTzu3XhCgg5EivG2bsTpSd63QFbUgS+/KmFtL+0RfSpeaD2QvOV8Q==
+  dependencies:
+    log-prefix "0.1.1"
+
 mimic-response@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-2.1.0.tgz#d13763d35f613d09ec37ebb30bac0469c0ee8f43"

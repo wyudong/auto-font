@@ -1,3 +1,4 @@
+require('log-timestamp')(function() { return new Date().toLocaleTimeString() });
 const robot = require('robotjs');
 const pos = require('./pos');
 
